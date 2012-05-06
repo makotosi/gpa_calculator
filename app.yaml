@@ -1,0 +1,27 @@
+# a test version of the app.yaml used for development. This is not intended to be checked in
+application: gpa-calc
+
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /css
+  static_dir: css
+  
+- url: /images
+  static_dir: images 
+
+- url: /js
+  static_dir: js
+  
+- url: /me
+  static_dir: me 
+  
+- url: /en
+  script: english.py
+  
+- url: /
+  script: main.py
+
+
